@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="css/materialize.css" media="screen,projection" type="text/css"/>
+    <link rel="stylesheet" href="css/style.css" media="screen,projection" type="text/css"/>
+
+    <title>FashionStyle</title>
+
+    <!-- Importer le CSS de Materialize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Google Font pour les icônes -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Style supplémentaire -->
+    <style>
+        .parallax-container {
+            height: 400px;
+        }
+
+        .parallax img {
+            filter: brightness(50%);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section-title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-wrapper blue-grey darken-4">
+            <a href="#" class="brand-logo center">FashionStyle</a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section d'Accueil avec Parallaxe -->
+    <div id="home" class="parallax-container">
+        <div class="parallax"><img src="https://source.unsplash.com/1600x900/?fashion" alt="Mode"></div>
+        <div class="section white center">
+            <h2 class="section-title">Bienvenue sur FashionStyle</h2>
+            <p>Découvrez les dernières tendances en mode.</p>
+        </div>
+    </div>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          overflow: auto;
+        }
+        .slideshow {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: -1; /* Derrière le contenu */
+        }
+        .slideshow img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          animation: slideAnimation 20s infinite;
+        }
+        .carousel{
+          pointer-events: none;
+        }
+        @keyframes slideAnimation {
+          0%, 100% { opacity: 0; }
+          25%, 75% { opacity: 1; }
+        }
+        .slideshow img:nth-child(1) { animation-delay: 5s; }
+        .slideshow img:nth-child(2) { animation-delay: 5s; }
+        .slideshow img:nth-child(3) { animation-delay: 5s; }
+      </style>
+    </head>
+    <body>
+      <!-- Diaporama en arrière-plan -->
+      <div class="slideshow">
+        <img src="BACK3.jpg" alt="Slide 1">
+        <img src="images (1).jpg" alt="Slide 2">
+        <img src="BACK1.jpg" alt="Slide 3">
+      </div>
+   
+
+    <!-- Section Produits -->
+    <div id="products" class="container">
+        <h4 class="center-align section-title">Nos Produits</h4>
+        <div class="row" style="margin-top: 20px;">
+            <!-- Produit 1 -->
+            <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images (2).jpg" class="responsive-img">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 2 -->
+             <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="R_.jpg" class="responsive-img">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="robe_.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="CH.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="polo-ralph-lauren-chemise-femme.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="CN13794DOY11_C3303_002.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="Pantalon-ample-taille-haute-a-imprime-geometrique.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="pull-chloe-ecru-lespiplettes3-scaled-800x1000.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="SCANDALR.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="SHORT.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+             <!-- Produit 1 -->
+             <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="T.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Vêtements élégants</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Vêtements modernes et élégants pour chaque occasion.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produit 2 -->
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="Rieker-femme-chaussures-nu-pied-sandales-nouvelle-collection.jpg">
+                        <span class="card-title"> <i class="far fa-heart"></i>Chaussures chics</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Des chaussures parfaites pour toutes les occasions.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <!-- Footer -->
+    <footer class="page-footer blue-grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">FashionStyle</h5>
+                  
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="footer">CONTACTER NOUS:</p>
+               <p> <i class=" fab fa-instagram"></i> :--fahionstyle</p>
+               <p><i class="fab fa-facebook"></i>:Your FashionStyle</p>
+               <p><i class="fab fa-tiktok"></i>:fahion__00</p>
+                © 2024 FashionStyle. Tous droits réservés.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Importer les scripts de Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.AutoInit(); // Initialisation de Materialize
+            M.Parallax.init(document.querySelectorAll('.parallax')); // Parallaxe
+        });
+    </script>
+</body>
+</html>
